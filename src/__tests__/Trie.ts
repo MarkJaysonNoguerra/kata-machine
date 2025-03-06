@@ -1,6 +1,6 @@
 import Trie from "@code/Trie";
 
-test("Trie", function() {
+test("Trie", function () {
     const trie = new Trie();
     trie.insert("foo");
     trie.insert("fool");
@@ -14,6 +14,15 @@ test("Trie", function() {
     ]);
 
     trie.delete("fool");
+    trie.delete("fo");
+
+    expect(trie.find("ba")).toEqual([
+        "bar"
+    ])
+
+    trie.delete("bar");
+    expect(trie.find("ba")).toEqual([]);
+
 
     expect(trie.find("fo").sort()).toEqual([
         "foo",
