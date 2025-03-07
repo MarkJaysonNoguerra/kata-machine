@@ -23,7 +23,6 @@ test("Trie", function () {
     trie.delete("bar");
     expect(trie.find("ba")).toEqual([]);
 
-
     expect(trie.find("fo").sort()).toEqual([
         "foo",
         "foolish",
