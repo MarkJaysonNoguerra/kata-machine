@@ -3,6 +3,9 @@
     "moduleNameMapper": {
         "@code/(.*)": [
             "<rootDir>/src/day1/$1"
+        ],
+        "@recursion/(.*)": [
+            "<rootDir>/src/the_recursive_book_of_recursion/$1"
         ]
     },
     "preset": "ts-jest"
